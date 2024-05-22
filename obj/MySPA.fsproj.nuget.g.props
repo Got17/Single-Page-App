@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\souva\.nuget\packages\</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.6.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\souva\.nuget\packages\" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\souva\.nuget\packages\fsharp.core\7.0.300</PkgFSharp_Core>
+    <PkgWebSharper Condition=" '$(PkgWebSharper)' == '' ">C:\Users\souva\.nuget\packages\websharper\6.1.5.317</PkgWebSharper>
+    <PkgWebSharper_MathJS Condition=" '$(PkgWebSharper_MathJS)' == '' ">C:\Users\souva\.nuget\packages\websharper.mathjs\6.1.5.317</PkgWebSharper_MathJS>
+    <PkgWebSharper_UI Condition=" '$(PkgWebSharper_UI)' == '' ">C:\Users\souva\.nuget\packages\websharper.ui\6.1.4.317</PkgWebSharper_UI>
+    <PkgWebSharper_FSharp Condition=" '$(PkgWebSharper_FSharp)' == '' ">C:\Users\souva\.nuget\packages\websharper.fsharp\6.1.5.317</PkgWebSharper_FSharp>
+    <PkgWebSharper_ChartJs Condition=" '$(PkgWebSharper_ChartJs)' == '' ">C:\Users\souva\.nuget\packages\websharper.chartjs\6.1.1.269</PkgWebSharper_ChartJs>
+    <PkgWebSharper_Charting Condition=" '$(PkgWebSharper_Charting)' == '' ">C:\Users\souva\.nuget\packages\websharper.charting\6.1.1.269</PkgWebSharper_Charting>
+    <PkgWebSharper_AspNetCore Condition=" '$(PkgWebSharper_AspNetCore)' == '' ">C:\Users\souva\.nuget\packages\websharper.aspnetcore\6.1.5.317</PkgWebSharper_AspNetCore>
+  </PropertyGroup>
+</Project>
