@@ -64,7 +64,7 @@ Before you start, ensure you have the following installed:
    ```sh
    dotnet run
    ```
-4. Open your web browser and navigate to [http://localhost:60683](http://localhost:60683) to view the application.
+4. Open your web browser and navigate to [http://localhost:5000](http://localhost:5000) to view the application.
 
 ## Contributing
 
