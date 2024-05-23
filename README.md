@@ -47,11 +47,11 @@ Before you start, ensure you have the following installed:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Got17/Single-Page-App-With-FSharp.git
+   git clone https://github.com/Got17/Single-Page-App.git
    ```
 2. Navigate to the project directory
    ```sh
-   cd Single-Page-App-With-FSharp
+   cd Single-Page-App
    ```
 ### Usage
 
