@@ -302,7 +302,7 @@ canvas {
     background-color: rgb(200, 0, 0);
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 800px) {
     .income-section-input,
     .expense-section-input,
     .total-section,
