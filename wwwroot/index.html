@@ -61,7 +61,7 @@
             <div class="amount-section">
                 <div class="amount-text">Amount</div>
                 <input ws-var="amountIncome" class="amount-input" type="number" placeholder="0.00">
-                <button style="margin-left: 15px" ws-onclick="addIncome" class="add-button">Add Income</button>
+                <button ws-onclick="addIncome" class="add-button">Add Income</button>
             </div>
         </div>
 
@@ -85,7 +85,7 @@
             <div class="amount-section">
                 <div class="amount-text">Amount</div>
                 <input ws-var="amountExpenses" class="amount-input" type="number" placeholder="0.00">
-                <button style="margin-left: 15px" ws-onclick="addExpense" class="add-button">Add Expenses</button>
+                <button ws-onclick="addExpense" class="add-button">Add Expenses</button>
             </div>
         </div>
 
@@ -120,8 +120,8 @@
             <div style="color: ${colorProfitAndLoss}" class="asset-profit-loss">Profit/Loss ${assetProfitAndLoss} (${assetProfitAndLossPercent}%)</div>
         </div>
 
-        <div style="margin-bottom: 50px;">
-            <canvas ws-replace="assetChart"></canvas>
+        <div class="assetChart-section">
+            <canvas class="asset-chart" ws-replace="assetChart"></canvas>
         </div>
 
         <div class="add-section">
@@ -137,38 +137,42 @@
                 <div class="average-price">Average price</div>
                 <input ws-var="stockPrice" class="stock-input" type="number">
             </div>
-            <button ws-onclick="add" class="add-button">Add Stock</button>
+            <div>
+                <button ws-onclick="add" class="add-button">Add Stock</button>
+            </div>
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Stock name</th>
-                    <th>Amount</th>
-                    <th>Average Price</th>
-                    <th>Last</th>
-                    <th>P&amp;L</th>
-                    <th>Cost Basis</th>
-                    <th>Market Value</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody ws-hole="stockTableBody" ws-children-template="stockList">
-                <tr>
-                    <td style="font-weight: bold">${stockName}</td>
-                    <td>${stockAmount}</td>
-                    <td>${stockPrice}</td>
-                    <td>${stockLast}</td>
-                    <td style="color: ${color}">${stockProfitAndLoss}</td>
-                    <td style="color: rgb(0, 210, 0)">${stockCostBasis}</td>
-                    <td>${stockMarketValue}</td>
-                    <td>
-                        <button ws-onclick="remove" class="remove-button">Remove</button>
-                    </td>
-                </tr>
-            </tbody>
+        <div class="stock-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stock name</th>
+                        <th>Amount</th>
+                        <th>Average Price</th>
+                        <th>Last</th>
+                        <th>P&amp;L</th>
+                        <th>Cost Basis</th>
+                        <th>Market Value</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody ws-hole="stockTableBody" ws-children-template="stockList">
+                    <tr>
+                        <td style="font-weight: bold">${stockName}</td>
+                        <td>${stockAmount}</td>
+                        <td>${stockPrice}</td>
+                        <td>${stockLast}</td>
+                        <td style="color: ${color}">${stockProfitAndLoss}</td>
+                        <td style="color: rgb(0, 210, 0)">${stockCostBasis}</td>
+                        <td>${stockMarketValue}</td>
+                        <td>
+                            <button ws-onclick="remove" class="remove-button">Remove</button>
+                        </td>
+                    </tr>
+                </tbody>
 
-        </table>
+            </table>
+        </div>
 
     </div>
     <script>

@@ -203,7 +203,7 @@ module Pages =
 
         // Create a live chart that displays up to 10 points of data
         let liveChart =
-            let chart = LiveChart.Line source.Publish 
+            let chart = LiveChart.Line source.Publish
                
             Renderers.ChartJs.Render(chart, Window = 10, Size = Size(1400, 300))
 
