@@ -21,7 +21,7 @@ This is a Single Page Application built using F# and WebSharper. First page is a
 
 ## Preview
 
-You can see a live preview of the website [here](https://myspa20240515212258.azurewebsites.net/#/).
+You can see a live preview of the website [here](https://got17.github.io/Single-Page-App/).
 
 ## Project Structure
 
